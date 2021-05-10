@@ -5,7 +5,7 @@ title: Personal Homepage of Bowman Chow
 description: "Blogging on github io"
 ---
 
-## [Bowman Chow](https://github.com/BowmanChow)
+# [Bowman Chow](https://github.com/BowmanChow)
 
 Department of electronic Engineering, Tsinghua University
 
