@@ -10,7 +10,7 @@ title:               BowmanChow
 #tagline:             'foo's website
 description:         BowmanChow's blog...
 url: https://BowmanChow.github.io/
-baseurl: "/"
+baseurl:
 urlimg: https://BowmanChow.github.io/images/
 markdown: kramdown
 paginate: 5
