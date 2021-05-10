@@ -1,8 +1,8 @@
 ---
 layout: default
 permalink: index.html
-title: Personal Homepage of Bowman Chow
-description: "Blogging on github io"
+title: {{ site.title }}
+description: {{ site.description }}
 ---
 
 # [Bowman Chow](https://github.com/BowmanChow)

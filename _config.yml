@@ -6,7 +6,7 @@ permalink: /blog/:year/:month/:day/:title/
 relative_permalinks: false
 
 # Setup
-title:               BowmanChow
+title:               BowmanChow's Blog
 #tagline:             'foo's website
 description:         BowmanChow's blog...
 url: https://BowmanChow.github.io/
