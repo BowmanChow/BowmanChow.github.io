@@ -34,15 +34,15 @@ exclude: ["lib", "config.rb", "Gemfile", "Capfile", "Gemfile.lock", "config", "l
 # About/contact
 author:
   name:              Bowman Chow
-  url:               https://twitter.com/abcd
+  url:               https://twitter.com/bowmanchow
   avatar:         foo.png
-  #email:           
+  email:           bowmanchow@gmail.com
 
 # Owner/author information
 owner:
   name:           Bowman Chow
   avatar:         foo.png
-  #email:          
+  email:          bowmanchow@gmail.com
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
   description:
   # Social networking links used in footer. Update and remove as you like.
@@ -72,9 +72,6 @@ links:
     url: /tags/
   - title: <i class="fa fa-archive"></i> Archive
     url: /archive/
-  - title: <i class="iconside iconm-wordpress"></i> Old Blog
-    url: https://foo.wordpress.com
-    external: true
   - title: <i class="iconside iconm-envelop"></i> Contact
     url: /contact/
   - title: <i class="iconside iconm-twitter"></i> Twitter
@@ -91,12 +88,12 @@ links:
 #twitter_widget_id: xyz123abc
 
 # Add disqus username for Disqus comment board:
-disqus_shortname: foo
+disqus_shortname: Bowman
 
 # Analytics and webmaster tools stuff goes here
 #google_analytics:   xyz123abc
 
 #### For dummy website only - remove if you wish ####
 github_repo: https://github.com/BowmanChow
-version: 1.1.0
+# version: 1.1.0
 ## END ##
