@@ -1,8 +1,8 @@
 ---
 layout: default
 permalink: index.html
-title: Personal Homepage of foo boo
-description: "Blogging on ...."
+title: Personal Homepage of Bowman Chow
+description: "Blogging on github io"
 ---
 
 ## [lanyon-plus](https://github.com/dyndna/lanyon-plus)
