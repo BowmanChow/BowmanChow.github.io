@@ -11,6 +11,7 @@ category:
 tags:
   - examples
   - common_tag
+  - test
 show_meta: true
 comments: true
 mathjax: true
@@ -142,9 +143,9 @@ Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo r
 
 #### markdown formatted:
 
-| Heading 1 | Heading 2 | Heading 3 |
-| :--- | --- | ---: |
-| Hello | World | <i class="fa fa-twitter"> @foo</i> |
+| Heading 1 | Heading 2 |                          Heading 3 |
+| :-------- | --------- | ---------------------------------: |
+| Hello     | World     | <i class="fa fa-twitter"> @foo</i> |
 
 Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
