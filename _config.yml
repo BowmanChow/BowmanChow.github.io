@@ -33,7 +33,7 @@ exclude: ["lib", "config.rb", "Gemfile", "Capfile", "Gemfile.lock", "config", "l
 
 # About/contact
 author:
-  name:              Foo Boo
+  name:              Bowman Chow
   url:               https://twitter.com/abcd
   avatar:         foo.png
   #email:           
