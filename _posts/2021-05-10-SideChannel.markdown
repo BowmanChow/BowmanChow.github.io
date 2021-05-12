@@ -28,18 +28,18 @@ CW1173 (这是一块很完善的芯片， 用 Xilinx 的 FPGA 写成， 并且�
 
 首先用示波器采集数据， 灯泡在收到关灯指令时的电压变化：
 
-![](https://tech-1301874737.cos.ap-nanjing.myqcloud.com/hack/side_channel/data.png =400x)
+![](https://tech-1301874737.cos.ap-nanjing.myqcloud.com/hack/side_channel/data.png)
 
 对序列做 2048 点 FFT ， 观察信号的频谱， 找到有用的分量。
 
-![](https://tech-1301874737.cos.ap-nanjing.myqcloud.com/hack/side_channel/fft_result.png =400x)
+![](https://tech-1301874737.cos.ap-nanjing.myqcloud.com/hack/side_channel/fft_result.png)
 
 可以看到有用信号接近 0 频， 为低通信号。
 
 使用一个 FIR 低通滤波器进行滤波， 滤波器的幅频响应如下：
 
-![](https://tech-1301874737.cos.ap-nanjing.myqcloud.com/hack/side_channel/filter.png =400x)
+![](https://tech-1301874737.cos.ap-nanjing.myqcloud.com/hack/side_channel/filter.png)
 
 滤波之后的信号如下：
 
-![](https://tech-1301874737.cos.ap-nanjing.myqcloud.com/hack/side_channel/filter_result.png =400x)
+![](https://tech-1301874737.cos.ap-nanjing.myqcloud.com/hack/side_channel/filter_result.png)
