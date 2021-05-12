@@ -26,7 +26,7 @@ CW1173 (这是一块很完善的芯片， 用 Xilinx 的 FPGA 写成， 并且�
 
 ## 分析
 
-首先用示波器采集数据， 灯泡在收到关灯指令时的电压变化：
+首先用示波器采集数据， 灯泡在收到关灯指令时的电压变化， 采样间隔是 $4 \mu s$：
 
 ![](https://tech-1301874737.cos.ap-nanjing.myqcloud.com/hack/side_channel/data.png)
 
@@ -43,3 +43,28 @@ CW1173 (这是一块很完善的芯片， 用 Xilinx 的 FPGA 写成， 并且�
 滤波之后的信号如下：
 
 ![](https://tech-1301874737.cos.ap-nanjing.myqcloud.com/hack/side_channel/filter_result.png)
+
+可以看到信号有一个明显的谷。
+
+为了确定芯片在关门过程中哪个波形包含了有用信号， 测量两次关门过程中的芯片 Vcc 波形， 把波形画在一起， 如图：
+
+![](https://tech-1301874737.cos.ap-nanjing.myqcloud.com/hack/side_channel/two_data.png)
+
+为了使两个信号对齐， 让两个信号做互相关， 得到互相关函数如下：
+
+![](https://tech-1301874737.cos.ap-nanjing.myqcloud.com/hack/side_channel/corr.png)
+
+找到两个信号的相对延迟时间：
+
+```matlab
+[max, index] = max(r);
+delay = lags(index)
+```
+
+得到黄色信号的相对延迟时间为 -773
+
+把黄色信号向前推 773 个点， 然后画在一起， 得到下面的图像：
+
+![](https://tech-1301874737.cos.ap-nanjing.myqcloud.com/hack/side_channel/Align.png)
+
+可见在第 800 个点左右的峰很可能是有用信号。
