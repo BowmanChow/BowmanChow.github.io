@@ -16,3 +16,5 @@ description: 小米蓝牙Mesh
 - [x] Gitlab账号开通
 
 - [ ] BLE MESH SDK
+
+但是三元组的用法还在研究， SDK 还没申请下来
